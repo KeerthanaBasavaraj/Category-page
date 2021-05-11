@@ -152,14 +152,25 @@ function myFunction() {
 var b = localStorage.getItem("myValue");
 console.log(b);
 
-if (b == 1) {
-  document.getElementById("acce").style.display = "flex";
-} else if (b == 2) {
-  document.getElementById("elec").style.display = "flex";
+function responsiveAlignment(elemId) {
+  if (window.innerWidth < 610){
+    document.getElementById(elemId).style.display = "inline";
+  }
+  else {
+    document.getElementById(elemId).style.display = "flex";
+    document.getElementById(elemId).style.flexDirection = "row-reverse";
+  }
+};
+
+if (b == 2) {
+    responsiveAlignment("elec");
+    window.addEventListener('resize', responsiveAlignment("elec"));
 } else if (b == 3) {
-  document.getElementById("enter").style.display = "flex";
+  responsiveAlignment("enter");
+  window.addEventListener('resize', responsiveAlignment("enter"));
 } else {
-  document.getElementById("acce").style.display = "flex";
+  responsiveAlignment("acce");
+  window.addEventListener('resize', responsiveAlignment("acce"));
 }
 
 $(document).ready(function () {
