@@ -98,6 +98,7 @@ function createContainer(i, imgArray, attriArray, container) {
   const parentDiv = document.createElement("div");
   const figure = document.createElement("img");
   const childDiv = document.createElement("div");
+  const priceTag = document.createElement("p");
 
   container.appendChild(parentDiv);
   parentDiv.classList.add(
@@ -106,6 +107,7 @@ function createContainer(i, imgArray, attriArray, container) {
     "col-md-4",
     "col-sm-4",
     "col-xs-4",
+    "card",
     "filter",
     attriArray[i][0]
   );
@@ -113,11 +115,14 @@ function createContainer(i, imgArray, attriArray, container) {
   figure.src = imgArray[i];
   figure.alt = attriArray[i][0];
   figure.classList.add("img-responsive");
-  childDiv.innerText = "$" + attriArray[i][1];
-  childDiv.classList.add("img-price");
+  priceTag.innerText = "$" + attriArray[i][1];
+  childDiv.classList.add("card-body");
+  priceTag.classList.add("img-price" ,"card-text");
 
   parentDiv.appendChild(figure);
   parentDiv.appendChild(childDiv);
+  childDiv.appendChild(priceTag);
+
 }
 
 for (var i = 0; i < accImgArray.length; i++) {
