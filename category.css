@@ -289,6 +289,8 @@ padding: 5px;
   .itemBox {
     padding: 5px;
     overflow: hidden;
+    transform: scale(0.95);
+    border-color: #444c56 !important;
   }
 
   .img-price {
@@ -306,6 +308,12 @@ padding: 5px;
   }
   .card-body{
     margin-top: 20px;
+  }
+
+  .card-text{
+    width: 90%;
+    border-top: 2px solid #655959;
+    padding: 8px 2px;
   }
  
   

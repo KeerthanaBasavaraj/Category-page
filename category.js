@@ -68,12 +68,12 @@ const eleImgArray = Object.keys(EleImgObj);
 const eleAttriArray = Object.values(EleImgObj);
 
 var EntImgObj = {
-  "images/book7.jpg": ["book", 100],
-  "images/inst4.jpg": ["instrument", 500],
-  "images/toy1.jpeg": ["toy", 100],
   "images/inst1.jpg": ["instrument", 600],
   "images/book2.jpg": ["book", 110],
   "images/toy2.jpg": ["toy", 150],
+  "images/book7.jpg": ["book", 100],
+  "images/inst4.jpg": ["instrument", 500],
+  "images/toy1.jpeg": ["toy", 100],
   "images/book3.jpg": ["book", 100],
   "images/inst2.jpg": ["instrument", 600],
   "images/toy3.jpg": ["toy", 250],
