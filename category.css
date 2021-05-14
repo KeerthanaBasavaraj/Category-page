@@ -315,5 +315,8 @@ padding: 5px;
     border-top: 2px solid #655959;
     padding: 8px 2px;
   }
- 
+ .img-responsive {
+   height:80%;
+   object-fit: cover;
+ }
   
