@@ -105,9 +105,9 @@ function createContainer(i, imgArray, attriArray, container) {
   parentDiv.classList.add(
     "itemBox",
     "col-lg-4",
-    "col-md-4",
-    "col-sm-4",
-    "col-xs-4",
+    "col-md-6",
+    "col-sm-12",
+    "col-xs-12",
     "card",
     "filter",
     attriArray[i][0],

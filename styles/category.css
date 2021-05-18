@@ -303,11 +303,9 @@ h1 {
 }
 
 .card-body {
-  margin-top: 20px;
+  margin-top: 0px;
   height: 220px;
-  /* border-top: 2px solid #655959; */
   overflow-wrap: break-word;
-  /* background-color: #fae0e79c; */
 }
 
 .card-body > p {
@@ -319,16 +317,16 @@ h1 {
 
 .productName {
   font-weight: bolder;
-  font-size: 1.6em ;
+  font-size: 1.1em ;
   color: #ff3969;
 }
 
 .productDesc {
-  font-size: 1.3em;
+  font-size: 0.8em;
 }
 
 .img-price {
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 .itemBox:hover > img,
@@ -344,11 +342,11 @@ h1 {
 .btn-style {
   width: 75%;
   font-family: "Nunito Sans", sans-serif;
-  font-size: 1.8em !important;
+  font-size: 1.1em !important;
   position: absolute;
   bottom: 1%;
   left: 30px;
-  margin: 10px auto;
+  margin: 8px auto;
 }
 
 @media screen and (max-width: 610px) {
