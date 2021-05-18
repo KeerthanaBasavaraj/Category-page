@@ -290,19 +290,24 @@ h1 {
   top: 0.1em;
 }
 
+.card{
+  border: 1px solid rgb(226 220 220) !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .itemBox {
   padding: 5px;
   overflow: hidden;
   transform: scale(0.95);
-  border-color: #444c56 !important;
+
 }
 
 .card-body {
   margin-top: 20px;
-  height: 310px;
-  border-top: 2px solid #655959;
+  height: 220px;
+  /* border-top: 2px solid #655959; */
   overflow-wrap: break-word;
-  background-color: #fae0e79c;
+  /* background-color: #fae0e79c; */
 }
 
 .card-body > p {
@@ -314,12 +319,12 @@ h1 {
 
 .productName {
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 1.6em ;
   color: #ff3969;
 }
 
 .productDesc {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .img-price {
@@ -332,7 +337,7 @@ h1 {
 }
 
 .img-responsive {
-  height: 80%;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -353,6 +358,6 @@ h1 {
     margin: 30px 8% 15px 0%;
   }
   .card-body {
-    height: 350px;
+    height: 250px;
   }
 }
